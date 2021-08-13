@@ -1,0 +1,1 @@
+<?php header("Location:nedmin/login.php"); ?>
