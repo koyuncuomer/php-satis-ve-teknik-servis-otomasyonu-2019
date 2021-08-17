@@ -47,6 +47,7 @@ include 'musterisayfasiheader.php'
 								<th>Durum</th>
 								<th>Müşteri Beyanı</th>
 								<th>İncele</th>
+								<th>js</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -69,7 +70,7 @@ include 'musterisayfasiheader.php'
 									<td><?php echo $bilgilerimcek['durum'] ?></td>
 									<td><?php echo $bilgilerimcek['musteri_beyani'] ?></td>
 									<td><a class="btn btn-primary" href="mserviskayit_incele.php?id=<?php echo $bilgilerimcek['id'] ?>">İncele</a></td>
-
+									<td>tablo son sütün gösterilmiyor js</td>
 								</tr>
 
 							<?php } ?>

@@ -131,37 +131,37 @@ include 'header.php';
     						<th>Servise Kayıt</th>
     						<th>Müşteri Beyanı</th>
     						<th>İncele</th>
-    					</tr>
-    				</thead>
-    				<tbody>
+                <th>js</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php 
+              $bilgilerimsor=$db->prepare("SELECT  * FROM yeniserviskayit where durum='beklemede' ");
+              $bilgilerimsor->execute();
 
-    					<?php 
-    					$bilgilerimsor=$db->prepare("SELECT  * FROM yeniserviskayit where durum='beklemede' ");
-    					$bilgilerimsor->execute();
+              while($bilgilerimcek=$bilgilerimsor->fetch(PDO::FETCH_ASSOC))
+              {
+                ?>
 
-    					while($bilgilerimcek=$bilgilerimsor->fetch(PDO::FETCH_ASSOC))
-    					{
-    						?>
+                <tr>
+                 <td><?php echo $bilgilerimcek['musteri_adsoyad'] ?></td>
+                 <td><?php echo $bilgilerimcek['il_adi'] ?></td>
+                 <td><?php echo $bilgilerimcek['model_adi'] ?></td>
+                 <td><?php echo $bilgilerimcek['seri_no'] ?></td>
+                 <td><?php echo $bilgilerimcek['giris_tarihi'] ?></td>
+                 <td><?php echo $bilgilerimcek['musteri_beyani'] ?></td>
+                 <td><a class="btn btn-primary" href="serviskayitlari_incele.php?id=<?php echo $bilgilerimcek['id'] ?>">İncele</a></td>
+                 <td>tablo son sütün gösterilmiyor js</td>
+               </tr>
 
-    						<tr>
-    							<td><?php echo $bilgilerimcek['musteri_adsoyad'] ?></td>
-    							<td><?php echo $bilgilerimcek['il_adi'] ?></td>
-    							<td><?php echo $bilgilerimcek['model_adi'] ?></td>
-    							<td><?php echo $bilgilerimcek['seri_no'] ?></td>
-    							<td><?php echo $bilgilerimcek['giris_tarihi'] ?></td>
-    							<td><?php echo $bilgilerimcek['musteri_beyani'] ?></td>
-    							<td><a class="btn btn-primary" href="serviskayitlari_incele.php?id=<?php echo $bilgilerimcek['id'] ?>">İncele</a></td>
-    						</tr>
+             <?php } ?>
 
-    					<?php } ?>
-
-    				</tbody>
-    			</table>
-    		</div>
-    	</div>
-    </div>
-
-  </div>
+           </tbody>
+         </table>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>
 
 <!-- /page content -->

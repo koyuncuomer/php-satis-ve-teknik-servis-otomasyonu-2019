@@ -46,6 +46,7 @@ $bugun = date_create(date('Y-m-d'));
 								<th>Satış Tarihi</th>
 								<th>Garanti Durumu</th>
 								<th>Seçenekler</th>
+								<th>js</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -104,6 +105,7 @@ $bugun = date_create(date('Y-m-d'));
                   	}
                   	?>
                   </td>
+                  <td>tablo son sütün gösterilmiyor js</td>
                 </tr>
 
               <?php } ?>
