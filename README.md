@@ -1,5 +1,5 @@
 # Satış ve Teknik Servis Otomasyonu
-**Demo:**  [demo.omerkoyuncu.com.tr](http://demo.omerkoyuncu.com.tr/ "satis ve teknik servis demo")   :point_left:
+**Demo:**  [Satış ve Teknik Servis DEMO](https://omerkoyuncu.site/demo "satis ve teknik servis demo")   :point_left:
 
 İlgili firma, müşterilerini, yaptığı satışları, ürettiği modelleri görebilir gerektiğinde bu bilgileri düzenleyebilir. Yeni müşteri, satış, model kaydı yapabilir. Müşteriler satın aldıkları ürünler için servis kaydı oluşturabilir. Firma yetkilileri bu servis kayıtlarını inceleyip düzenlebilir. Ürünün servis kaydı ile ilgili tüm bu düzenlemeler müşteriye mail olarak bildirilir. Tüm bu olaylar loglanmaktadır.
 > **Frontend için [github.com/ColorlibHQ/gentelella](https://github.com/ColorlibHQ/gentelella "github.com/ColorlibHQ/gentelella") kullanılmıştır.**  
